@@ -1,5 +1,4 @@
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import { Button } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from 'redux/authOperations';
 import { getUserName } from 'redux/authSlice';
@@ -16,15 +15,6 @@ export const UserMenu = () => {
         <AccountCircle />
       </Image>
       <UserName>{`Hello, ${name.toUpperCase()}`}</UserName>
-      {/* <Button
-        variant="contained"
-        type="button"
-        onClick={() => {
-          dispatch(logout());
-        }}
-      >
-        Log Out
-      </Button> */}
       <Btn
         variant="contained"
         type="button"
